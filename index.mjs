@@ -1,3 +1,10 @@
+/* The type of the file is mjs, because I am using
+node-fetch and it is only imported, and that is available
+only in modules, so it is .mjs, not js.
+Also i use createRequire to be able to 
+require fs and util
+*/
+
 import { createRequire } from "module";
 const require = createRequire(import.meta.url);
 const fs = require("fs");
